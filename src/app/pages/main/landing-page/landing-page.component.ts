@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
+import { ModalService } from '../../core/modal.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -25,13 +26,42 @@ export class LandingPageComponent implements OnInit {
     if (this.showTicks) {
       return this.autoTicks ? 'auto' : this.tickInterval;
     }
-
     return 0;
   }
 
-  constructor() { }
+  constructor(
+   public modalService : ModalService
+  ) { }
 
   ngOnInit(): void {
+    this.testAlertModal()
+  }
+
+  testAlertModal() {
+    const data = {};
+    this.modalService.ConfirmActionModal(data).subscribe(
+      (res: any) => {
+        if(res.data == 1){
+          this.testModal()
+        }
+        console.log('result :',res);
+      },
+      err => {
+        console.log(err);
+      }
+    )
+  }
+
+  testModal() {
+    const data = {};
+    this.modalService.OtherInfoModal(data).subscribe(
+      (res: any) => {
+        console.log('result :',res);
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 
 }

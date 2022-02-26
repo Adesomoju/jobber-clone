@@ -1,0 +1,57 @@
+<section class="bg-white">
+  <mat-dialog-content class="bg-white add-extra">
+    <div class="modal-pad">
+      <div>
+        <div class="color-blue font-24 fw-500 mb-3">Better market your expertise with <br>
+          specialized profiles</div>
+        <div class="font-14 color-black mb-2">Specialized profiles allow you to display more specific skills, deliverables,
+          and more – and help
+          power better search results and job recommendations.</div>
+        <hr class="mb-3 color-text">
+      </div>
+
+      <div class="px-5">
+        <div class="mb-5">
+          <div class="font-18 fw-500 color-text mb-3">Personal Information</div>
+          <div class="mb-3 relative">
+            <span><img class="icons" src="assets/icons/job-title.svg" alt=""></span>
+            <input class="jb-input font-16 w-full fw-500 color-text round-8 " type="text" placeholder="Full Name">
+          </div>
+          <div class="mb-3 relative">
+            <span class="font-16 fw-500 color-text texts">+234 | </span>
+            <input class="jb-input2 font-16 w-full fw-500 color-text round-8 " type="text" placeholder="Phone Number">
+          </div>
+          <div class="mb-3 relative">
+            <span><img style="width: 12px;" class="icons" src="assets/icons/location.svg" alt=""></span>
+            <input class="jb-input font-16 w-full fw-500 color-text round-8 " type="text"
+              placeholder="Select your state">
+          </div>
+        </div>
+
+        <div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-18 fw-500 color-text">Education</div>
+            <div class="font-14 fw-500 color-black bg-lblue round-10 p-3 pointer"> <span><img class="mgr-5"
+                  src="assets/icons/black-plus.svg" alt=""></span> Add Education</div>
+
+          </div>
+          <div>
+            <div class="mb-3 relative">
+              <span><img class="icons" src="assets/icons/degree.svg" alt=""></span>
+              <input class="jb-input font-16 w-full fw-500 color-text round-8 " type="text" placeholder="Degree (BSC)">
+            </div>
+            <div class="mb-3 relative">
+              <span><img class="icons" src="assets/icons/university.svg" alt=""></span>
+              <input class="jb-input font-16 w-full fw-500 color-text round-8 " type="text"
+                placeholder="School (University/Insitutions)">
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mb-2">
+            <button (click)="modalResponse(1)" class="font-14 fw-500 btn-white round-10 p-3 w-120 text-center mgr-30">Skip for now</button>
+            <button (click)="modalResponse(1)" class="font-14 fw-500 btn-white round-10 p-3 w-120 text-center">Next</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</section>

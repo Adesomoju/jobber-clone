@@ -1,0 +1,27 @@
+.modal-pad{
+    padding: 0px 40px 0px 35px;
+}
+
+mat-dialog-content {
+    display: block;
+    margin: 0 -24px;
+    padding: 0 24px;
+    -webkit-overflow-scrolling: touch;
+    min-height: 650px !important;
+}
+
+.jb-input2 {
+    background: #EDEDED;
+    color: #979797;
+    border: none;
+    position: relative;
+    padding: 15px 15px 15px 65px;
+}
+
+.texts{
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+    /* width: 50px; */
+    margin-left: 12px;
+}

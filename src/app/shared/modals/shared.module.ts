@@ -3,10 +3,15 @@ import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
+import { WelcomeModalComponent } from './welcome-modal/welcome-modal.component';
+import { PersonalInfoModalComponent } from "./personal-info-modal/personal-info-modal.component";
 
 
 @NgModule({
-    declarations: [],
+    declarations: [
+    WelcomeModalComponent,
+    PersonalInfoModalComponent
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -14,7 +19,10 @@ import { RouterModule } from '@angular/router';
     MatDialogModule,
     RouterModule,
     ],
-    exports: [ ],
+    exports: [
+      WelcomeModalComponent,
+      PersonalInfoModalComponent
+     ],
     providers: [],
     entryComponents:[]
 })
