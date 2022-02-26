@@ -1,0 +1,222 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/solid.min.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.bg-white{
+    background: #FFFFFF;
+}
+
+.bg-black{
+    background: #010101 !important;
+}
+
+.bg-gen{
+    // background: #E5E5E5
+    background: #e5e5e538;
+}
+
+.bg-blue{
+    background: #4168C5;
+}
+
+.bg-grey{
+    background: #EDEDED;
+}
+
+.bg-lorange{
+    background: #F3CFB9;
+}
+
+.bg-llorange{
+    background: #FFEFE4;
+}
+
+.bg-orange{
+    background: #E86514;
+}
+
+.bg-lgreen{
+    background: #C9FFCE;
+}
+
+.bg-llblue{
+    background: #DFE7FA;
+}
+
+.bg-lblue{
+    background: #E6ECFB;
+}
+
+.bg-edit{
+    background: #E9E9E9;
+}
+
+.color-text{
+    color: #4E5559;
+}
+
+.color-black{
+    color: #010101;
+}
+
+.color-grey{
+    color: #979797;
+}
+
+.color-white{
+    color: #FFFFFF;
+}
+
+.color-blue{
+    color: #2952A8;
+}
+
+.bsh-gen{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.border-gen{
+    border: 2px solid #4E5559;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.w-45{
+    width: 45% !important;
+}
+
+.w-25{
+    width: 25% !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.no-flow-y{
+    overflow-y: hidden;
+}
+
+.no-flow-x{
+    overflow-x: hidden;
+}
+
+.w-200{
+    width: 200px;
+}
+
+.w-120{
+    width: 120px !important;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}
+
+.no-border{
+    border: none;
+}
+
+.round-5{
+    border-radius: 5px;
+}
+
+.round-8{
+    border-radius: 8px;
+}
+
+.round-10{
+    border-radius: 10px;
+}
+
+.round-15{
+    border-radius: 15px;
+}
+
+.round-20{
+    border-radius: 20px;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.font-45{
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.font-24{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.font-18{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.font-16{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.font-14{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.font-12{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.font-10{
+    font-size: 10px;
+    line-height: 147.19%;
+}
+
+mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: rgba(255, 255, 255, 0.802)FFF;
+}
+
+mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #259A1B;
+}
+
+.mat-accent .mat-slider-track-fill {
+    background-color: #3A64BE !important;
+}
+
+.mat-slider-thumb-label {
+    background-color: rgba(149, 156, 151, 0.227) !important;
+
+}
+
+.mat-slider-thumb {
+    background-color: #3a64be6b !important;
+}
+
+.mat-slider-horizontal {
+    height: 8px !important;
+    min-width: 80% !important;
+}
+
+.mat-slider-ticks {
+    opacity: 0.1 !important;
+    background-color: #0a0a0a !important;
+}

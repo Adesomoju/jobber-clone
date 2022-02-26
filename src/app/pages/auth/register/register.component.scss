@@ -1,0 +1,33 @@
+.shape{
+    width: 580px;
+    height: 623px;
+}
+
+.my-15{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icons{
+    position: absolute;
+    z-index: 1;
+    margin-top: 13px;
+    width: 17px;
+    margin-left: 12px;
+}
+
+.jb-input{
+    background: #EDEDED;
+    color: #979797;
+    border: none;
+    position: relative;
+    padding: 10px 15px 10px 40px;
+    &:hover,:focus{
+        background: #FFFFFF;
+        border: 2px solid #2952A8;
+        box-sizing: border-box;
+        color: #4E5559;
+        appearance: none;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+}

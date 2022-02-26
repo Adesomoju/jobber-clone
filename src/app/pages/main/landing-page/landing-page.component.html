@@ -1,0 +1,512 @@
+<div class="">
+  <!-- header section -->
+  <section class="bg-white bsh-gen parent">
+    <div class="d-flex py-3 justify-content-between align-items-center">
+      <div class="">
+        <img class="m-auto d-flex pointer" src="assets/images/Logo.svg" alt="">
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="fw-500 pointer font-18 color-blue mgr-30">Jobs</div>
+        <div class="fw-500 pointer font-18 color-black mgr-30">Saved Jobs</div>
+        <div class="fw-500 pointer font-18 color-black">Order History</div>
+      </div>
+
+      <div class="d-flex">
+        <div class="mgr-30">
+          <span><img class="icon-top" src="assets/icons/search.svg" alt=""></span>
+          <input class="jb-input font-18 w-full fw-500 color-text round-8 " type="text" placeholder="search anything">
+        </div>
+        <div>
+          <img class="pointer" src="assets/icons/profile.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- body section -->
+  <section class="parent pad-y-2 bg-gen mt-1">
+    <div>
+      <div class="font-45 color-blue fw-bold pt-3">Find a Job</div>
+      <div class="d-flex justify-content-end">
+        <div class="font-16 color-black bg-lblue mb-4 round-10 p-3 w-200 pointer"> <span><img class="mgr-5"
+              src="assets/icons/black-plus.svg" alt=""></span> Create new search</div>
+      </div>
+    </div>
+
+    <div class="bg-white px-5 d-flex justify-content-around align-items-center">
+      <div class="d-flex ">
+
+        <div class="mgr-30">
+          <span><img class="icons" src="assets/icons/job-title.svg" alt=""></span>
+          <input class="jb-input font-16 w-full fw-500 color-text round-8 " type="text" placeholder="Enter a Job title">
+        </div>
+
+        <div class="round-8 px-5 bg-grey d-flex">
+          <div>
+            <span><img class="icons" src="assets/icons/locator.svg" alt=""></span>
+            <input class="jb-input font-16 w-full fw-500 color-text " type="text" placeholder="Add a location">
+          </div>
+          <div class="bg-grey font-12 p-3 color-text">
+            <span><img class="mgr-5" src="assets/icons/www.svg" alt=""></span> Remote off <span><img class="mgl-5"
+                src="assets/icons/arrow-down.svg" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="font-16 color-white bg-blue my-4 round-10 p-3 w-120 text-center"> <span><img
+            src="assets/icons/white-search.svg" alt=""></span> Search </div>
+
+    </div>
+
+    <!-- ----3 main sections-------- -->
+    <div class="d-flex justify-content-between mt-5">
+      <!-- ----left side ------- -->
+      <div class="bg-white round-15 p-4 w-25 h-fit">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="color-black fw-500 font-24">Filter <span><img src="assets/icons/filter.svg" alt=""></span></div>
+          <div class="font-12 underline color-text pointer">clear all filters</div>
+        </div>
+
+        <hr class="mgb-35">
+
+        <div class="mgb-35">
+          <div class="font-16 color-black mb-3 fw-500">Salary Range <span class="font-12 color-text">(min - max)</span>
+          </div>
+          <div class="color-text font-10">NGN 10,000 - NGN {{value}},000 +</div>
+
+          <mat-slider class="" [disabled]="disabled" [invert]="invert" [max]="max" [min]="min" [step]="step"
+            [thumbLabel]="thumbLabel" [tickInterval]="getSliderTickInterval()" [(ngModel)]="value" [vertical]="vertical"
+            aria-labelledby="example-name-label">
+          </mat-slider>
+        </div>
+
+        <div class="mgb-35">
+          <div class="color-black font-16 mb-3 fw-500">Level <span class="font-12 color-text">(Junior, Mid,
+              Senior)</span></div>
+          <select class="form-select mb-3 w-200 font-14 color-text" aria-label="Default select example">
+            <option selected>Junior</option>
+            <option value="1">Junior</option>
+            <option value="2">Mid</option>
+            <option value="3">Senior</option>
+          </select>
+        </div>
+
+        <div class="mgb-35">
+          <div class="color-black font-16 mb-3 fw-500">Availability</div>
+          <div>
+            <div class="mb-3 d-flex">
+              <div class="form-check mgr-30">
+                <input class="form-check-input" type="checkbox" name="" id="">
+                <label class="font-14 color-text" for="">Part-Time</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="">
+                <label class="font-14 color-text" for="">Full-Time</label>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="font-14 color-text" for="">Contract</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mgb-35">
+          <div class="color-black font-16 mb-3 fw-500">Company Size</div>
+          <select class="form-select mb-3 font-14 w-200 color-text" aria-label="Default select example">
+            <option selected>Small size 5 - 10</option>
+            <option value="1">Small size 5 - 15</option>
+            <option value="2">Small size 15 - 30</option>
+            <option value="3">Small size 25 - 50</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="color-black font-16 fw-500 mb-3">Area of interest</div>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="font-14 color-text mb-3" for="">Node js</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="font-14 color-text mb-3" for="">Design</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="font-14 color-text mb-3" for="">Construction</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="" id="">
+              <label class="font-14 color-text mb-3" for="">Education</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ----left side ends------ -->
+
+      <!-- ------------middle side----------- -->
+      <div class="bg-white round-15 p-4 w-45">
+        <div class="d-flex justify-content-between align-items-center mb-3 px-3">
+          <div class="color-black fw-500 font-18">Results <span class="font-18 fw-500 color-text">1255 +</span></div>
+          <div class="color-black fw-500 font-18">Sort by : <span class="font-18 fw-500 color-text">Recommended <img
+                src="assets/icons/arrow-down.svg" alt=""></span> </div>
+        </div>
+
+        <hr class="mgb-35">
+
+        <div class="px-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-24 fw-500 color-black">Sales Excellence Manager</div>
+            <div class="font-18 fw-500 color-black">NGN 500,000</div>
+          </div>
+
+          <div class="color-blue font-16 mb-3"><span class="mgr-30"><img src="assets/icons/sale.svg"
+                alt=""></span>ABELINIS LTD</div>
+
+          <div class="d-flex mb-3">
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/employee.svg" alt=""></span>11
+                - 50 Employees</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/locator.svg"
+                    alt=""></span>Lagos</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/full-time.svg"
+                    alt=""></span>Full Time</div>
+            </div>
+          </div>
+
+          <div class="color-black font-12 mb-3">
+            The overall purpose of role is to lead the Sales Capability Plans and implement a defined capability
+            development agenda to enhance Sales Force Effectiveness for the Business. The role supports the Sales
+            leadership team in the implementation of the following: Optimization of sales force productivity;
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex">
+              <div class="font-12 color-black pad-5-15 round-5 bg-llblue mgr-30">Sales</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lorange mgr-30">Management</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lgreen mgr-30">Reports</div>
+            </div>
+            <div>
+              <img src="assets/icons/heart.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 px-3">
+        <!-- ----------1------------- -->
+        <div class="px-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-24 fw-500 color-black">Sales Excellence Manager</div>
+            <div class="font-18 fw-500 color-black">NGN 500,000</div>
+          </div>
+
+          <div class="color-blue font-16 mb-3"><span class="mgr-30"><img src="assets/icons/sale.svg"
+                alt=""></span>ABELINIS LTD</div>
+
+          <div class="d-flex mb-3">
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/employee.svg" alt=""></span>11
+                - 50 Employees</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/locator.svg"
+                    alt=""></span>Lagos</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/full-time.svg"
+                    alt=""></span>Full Time</div>
+            </div>
+          </div>
+
+          <div class="color-black font-12 mb-3">
+            The overall purpose of role is to lead the Sales Capability Plans and implement a defined capability
+            development agenda to enhance Sales Force Effectiveness for the Business. The role supports the Sales
+            leadership team in the implementation of the following: Optimization of sales force productivity;
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex">
+              <div class="font-12 color-black pad-5-15 round-5 bg-llblue mgr-30">Sales</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lorange mgr-30">Management</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lgreen mgr-30">Reports</div>
+            </div>
+            <div>
+              <img src="assets/icons/heart.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 px-3">
+
+        <!-- -------------2----------- -->
+        <div class="px-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-24 fw-500 color-black">Sales Excellence Manager</div>
+            <div class="font-18 fw-500 color-black">NGN 500,000</div>
+          </div>
+
+          <div class="color-blue font-16 mb-3"><span class="mgr-30"><img src="assets/icons/sale.svg"
+                alt=""></span>ABELINIS LTD</div>
+
+          <div class="d-flex mb-3">
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/employee.svg" alt=""></span>11
+                - 50 Employees</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/locator.svg"
+                    alt=""></span>Lagos</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/full-time.svg"
+                    alt=""></span>Full Time</div>
+            </div>
+          </div>
+
+          <div class="color-black font-12 mb-3">
+            The overall purpose of role is to lead the Sales Capability Plans and implement a defined capability
+            development agenda to enhance Sales Force Effectiveness for the Business. The role supports the Sales
+            leadership team in the implementation of the following: Optimization of sales force productivity;
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex">
+              <div class="font-12 color-black pad-5-15 round-5 bg-llblue mgr-30">Sales</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lorange mgr-30">Management</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lgreen mgr-30">Reports</div>
+            </div>
+            <div>
+              <img src="assets/icons/heart.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 px-3">
+
+        <!-- ---------3------------ -->
+
+        <div class="px-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-24 fw-500 color-black">Sales Excellence Manager</div>
+            <div class="font-18 fw-500 color-black">NGN 500,000</div>
+          </div>
+
+          <div class="color-blue font-16 mb-3"><span class="mgr-30"><img src="assets/icons/sale.svg"
+                alt=""></span>ABELINIS LTD</div>
+
+          <div class="d-flex mb-3">
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/employee.svg" alt=""></span>11
+                - 50 Employees</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/locator.svg"
+                    alt=""></span>Lagos</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/full-time.svg"
+                    alt=""></span>Full Time</div>
+            </div>
+          </div>
+
+          <div class="color-black font-12 mb-3">
+            The overall purpose of role is to lead the Sales Capability Plans and implement a defined capability
+            development agenda to enhance Sales Force Effectiveness for the Business. The role supports the Sales
+            leadership team in the implementation of the following: Optimization of sales force productivity;
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex">
+              <div class="font-12 color-black pad-5-15 round-5 bg-llblue mgr-30">Sales</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lorange mgr-30">Management</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lgreen mgr-30">Reports</div>
+            </div>
+            <div>
+              <img src="assets/icons/heart.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 px-3">
+
+        <!-- ----------4----------- -->
+
+        <div class="px-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="font-24 fw-500 color-black">Sales Excellence Manager</div>
+            <div class="font-18 fw-500 color-black">NGN 500,000</div>
+          </div>
+
+          <div class="color-blue font-16 mb-3"><span class="mgr-30"><img src="assets/icons/sale.svg"
+                alt=""></span>ABELINIS LTD</div>
+
+          <div class="d-flex mb-3">
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/employee.svg" alt=""></span>11
+                - 50 Employees</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/locator.svg"
+                    alt=""></span>Lagos</div>
+            </div>
+            <div class="mgr-30">
+              <div class="color-text font-14"><span class="mgr-10"><img src="assets/icons/full-time.svg"
+                    alt=""></span>Full Time</div>
+            </div>
+          </div>
+
+          <div class="color-black font-12 mb-3">
+            The overall purpose of role is to lead the Sales Capability Plans and implement a defined capability
+            development agenda to enhance Sales Force Effectiveness for the Business. The role supports the Sales
+            leadership team in the implementation of the following: Optimization of sales force productivity;
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex">
+              <div class="font-12 color-black pad-5-15 round-5 bg-llblue mgr-30">Sales</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lorange mgr-30">Management</div>
+              <div class="font-12 color-black pad-5-15 round-5 bg-lgreen mgr-30">Reports</div>
+            </div>
+            <div>
+              <img src="assets/icons/heart.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 px-3">
+
+        <div class="d-flex justify-content-end">
+          <button class="color-blue p-3 bg-white outline-btn font-14 fw-500">Load more</button>
+        </div>
+
+      </div>
+      <!-- ------------middle side ends--------- -->
+
+      <!-- ---------right side----------- -->
+      <div class="w-25">
+        <div class="bg-white round-15 p-4 mb-4">
+          <div class="mb-3">
+            <div class="font-18 color-black fw-500"><span>
+                <mat-slide-toggle checked="checked"></mat-slide-toggle>
+              </span> Get alert for this search</div>
+          </div>
+
+          <hr class="mb-3">
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="pad-5-15 font-12 round-5 color-text bg-edit pointer"><span><img class="mgr-5"
+                  src="assets/icons/edit.svg" alt=""></span>Edit</div>
+            <div class="color-blue font-12">example@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="bg-llorange round-15 p-4 text-center mb-5">
+          <div class="mb-3 font-18 fw-500 color-black">Would you like to <br>post a job!</div>
+          <div class="mb-3 font-10 color-black">get 50% offer every post made <br> and discover new candidates</div>
+          <button class="font-14 color-white fw-500 bg-orange p-4 text-center round-10">Get started</button>
+        </div>
+
+        <div>
+          <div class="fw-500 font-18 color-black">Job Functions</div>
+          <div class="p-4">
+            <ul class="list" role="list">
+              <li class="pad-5 text-li"><span class="style2 ">A</span>Accounting,</li>
+              <li class="style1 text-li">Auditing & Finance</li>
+              <li class="style1 text-li">Admin & Office</li>
+              <li class="pad-5 text-li"><span class="style2 ">B</span>Building & Architecture</li>
+              <li class="pad-7 text-li"><span class="style2 ">c</span>Community & Social Services</li>
+              <li class="style1 text-li">Consulting & Strategy</li>              
+              <li class="style1 text-li">Creative & Design </li>
+              <li class="style1 text-li">Customer Service & Support</li>
+              <li class="pad-5 text-li"><span class="style2 ">D</span>Driver & Transport Services</li>
+              <li class="pad-6 text-li"><span class="style2 ">E</span>Engineering & Technology </li>
+              <li class="style1 text-li">Estate Agents & Property</li>              
+              <li class="style1 text-li">Management </li>
+              <li class="pad-6 text-li"><span class="style2 ">F</span>Farming & Agriculture </li>
+              <li class="style1 text-li">Food Services & Catering  </li>
+              <li class="pad-4 text-li"><span class="style2 ">H</span>Health & Safety  </li>
+              <li class="style1 text-li">Hospitality & Leisure</li>              
+              <li class="style1 text-li">Human Resources </li>
+              <li class="pad-6 text-li"><span class="style2 ">L</span>Legal Services</li>
+              <li class="pad-1 text-li"><span class="style2 ">M</span>Management & Business</li>
+              <li class="style1 text-li">Development</li>              
+              <li class="style1 text-li">Marketing & Communications </li>
+              <li class="style1 text-li">Medical & Pharmaceutical </li>
+              <li class="pad-5 text-li"><span class="style2 ">P</span>Product & Project</li>
+              <li class="style1 text-li">Management</li>
+              <li class="pad-4 text-li"><span class="style2 ">Q</span>Quality Control & Assurance </li>
+              <li class="pad-5 text-li"><span class="style2 ">R</span>Research, Teaching</li>
+              <li class="style1 text-li">Training</li>
+              <li class="pad-6 text-li"><span class="style2 ">S</span>Sales</li>
+              <li class="style1 text-li">Software & Data  </li>
+              <li class="style1 text-li">Supply Chain & Procurement  </li>
+              <li class="pad-6 text-li"><span class="style2 ">T</span>Trades & Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer section -->
+  <section class="bg-black parent pad-y-2">
+    <div class="d-flex justify-content-between">
+      <div>
+        <div class="my-4">
+          <img class="mgb-70 pointer" src="assets/images/whiteLogo.svg" alt="">
+        </div>
+
+        <div class="d-flex mb-3">
+          <img class="mgr-30 pointer" src="assets/icons/twitter.svg" alt="">
+          <img class="mgr-30 pointer" src="assets/icons/insta.svg" alt="">
+          <img class="mgr-30 pointer" src="assets/icons/linkedin.svg" alt="">
+          <img class="mgr-30 pointer" src="assets/icons/facebook.svg" alt="">
+        </div>
+
+        <div class="d-flex">
+          <img class="mgr-30 pointer" src="assets/images/googlestore.svg" alt="">
+          <img class="pointer" src="assets/images/appstore.svg" alt="">
+        </div>
+      </div>
+
+      <div>
+        <div class="font-24 color-white fw-500 my-4">About</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Home</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">About Jobberman</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Contact us/ Help Center</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Privacy & Policies</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Terms of Use</div>
+      </div>
+
+      <div>
+        <div class="font-24 color-white fw-500 my-4">Companies</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Post a job</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Job FAQs</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Talents</div>
+      </div>
+
+      <div>
+        <div class="font-24 color-white fw-500 my-4">Candidates</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">My Accounts</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Job Alerts</div>
+        <div class="pointer font-18 color-white fw-500 mb-3">Applied jobs</div>
+      </div>
+
+    </div>
+    <div class="font-14 color-grey text-center my-4"> Jobberman 2021. All rights reserved.</div>
+
+  </section>
+</div>
